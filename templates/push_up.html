@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>VITALITY.AI</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="X Gym Fitness HTML Template">
+	<meta name="keywords" content="fitness, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link href="{{ url_for('static', filename='img/favicon.ico')}}" rel="shortcut icon" />
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}} " />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}} " />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css')}} " />
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" />
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<a href="{{url_for('home')}}" class="site-logo">
+			<!-- <img src="img/logo.png" alt=""> -->
+			<h3><span>VITALITY</span>AI</h3>
+		</a>
+		<ul class="main-menu">
+			<li><a class="active" href="{{url_for('home')}}">Home</a></li>
+			<li><a href="{{url_for('squat_classes')}}">Squat</a></li>
+			<li><a href="{{url_for('pu_classes')}}">Deathlift</a></li>
+			<!-- <li><a href="contact.html">Contact</a></li> -->
+		</ul>
+	</header>
+	<div class="clearfix"></div>
+	<!-- Header section end -->
+	<!-- Page top section -->
+	<section class="page-top-section set-bg" data-setbg="{{ url_for('static', filename='img/header-bg/2.jpg')}}">
+		<div class="container">
+			<h2>Deathlift Classes</h2>
+		</div>
+	</section>
+	<!-- Page top section end -->
+	<!-- Classes section -->
+	<section class="classes-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8  offset-lg-2">
+					<img src="{{ url_for('push_up') }}" width="100%">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js')}} "></script>
+	<script src="{{ url_for('static', filename='js/jquery.slicknav.js')}} "></script>
+	<script src="{{ url_for('static', filename='js/owl.carousel.min.js')}} "></script>
+	<script src="{{ url_for('static', filename='js/circle-progress.min.js')}} "></script>
+	<script src="{{ url_for('static', filename='js/main.js')}} "></script>
+
+</body>
+</html>
